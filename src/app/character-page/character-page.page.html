@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>CharacterPage</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="folder/inbox"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="ion-padding">
+    <img alt="{{character.name}}" [src]="character.image" class="ion-padding" />
+    <ion-card-header>
+      <ion-card-title>{{character.name}}</ion-card-title>
+      <ion-card-subtitle>{{character.species}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{character.location?.name}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
